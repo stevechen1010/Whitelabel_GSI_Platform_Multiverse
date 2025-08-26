@@ -241,6 +241,13 @@ const gameType = computed(() => {
 const productCode = ref(0)
 const slide = ref(1)
 
+function testBug() {
+  const a = 1
+  if (a = 2) {
+    console.log("wrong condition")
+  }
+}
+
 function handleTabClick(productId: number) {
   productCode.value = productId
   router.replace({ params: { gameType: gameType.value, productCode: productId } })
