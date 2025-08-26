@@ -1,0 +1,21 @@
+{
+  "extends": "@quasar/app-vite/tsconfig-preset",
+  "compilerOptions": {
+    "isolatedModules": false,
+    "baseUrl": "."
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".quasar",
+    "coverage",
+    "public",
+    "tests",
+    "cypress",
+    "**/*.spec.ts",
+    "**/__mocks__/**",
+    ".vscode",
+    "tool",
+    "src-cordova"
+  ]
+}

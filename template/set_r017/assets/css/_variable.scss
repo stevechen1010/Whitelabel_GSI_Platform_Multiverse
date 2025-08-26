@@ -1,0 +1,63 @@
+$emotional01: #ff3b3b;
+$emotional02: #3ecc31;
+$emotional03: #FF2929;
+
+$neutral01: #ffffff;
+$neutral02: #ffffffc4;
+$neutral03: #ffffff78;
+$neutral04: #d2d2d23d;
+$neutral05: #262626;
+$neutral10: #000000;
+
+$primany01: #f26319;
+$primany02: #d12d00;
+
+$secondary01: #1d125d;
+$secondary02: #0c0c1c;
+$secondary03: #b1a79e;
+$secondary04: #64594f;
+$secondary05: #000025;
+$secondary06: #070609;
+$secondary07: #79739e;
+$secondary08: #03032357;
+$secondary09: #14144a61;
+$secondary10: #030323;
+$secondary11: #3f3b52;
+$secondary12: #2d2941;
+$secondary13: #1c192e;
+
+$gradient01: linear-gradient(90deg, $primany01 0%, $primany02 100%);
+
+$shadoe01: 0px 2px 4px 0px #00000080;
+$shadoe02: 0px 4px 4px 0px #00000066;
+$shadoe03: 0px 2px 4px 0px #00000050;
+
+@mixin scrollbar01($thumb-color: #6034DB,
+  $thumb-hover-color: #6034DB,
+  $track-color: #6034DB,
+  $width: .25rem,
+  $radius: .25rem) {
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #{$thumb-color} #{$track-color};
+
+  /* WebKit-based browsers */
+  &::-webkit-scrollbar {
+    width: $width;
+    height: $width;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $track-color;
+    border-radius: $radius;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $thumb-color;
+    border-radius: $radius;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $thumb-hover-color;
+  }
+}
