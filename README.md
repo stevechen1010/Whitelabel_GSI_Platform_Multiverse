@@ -1,0 +1,2 @@
+# Whitelabel_GSI_Platform_Multiverse
+多版型
